@@ -1,0 +1,213 @@
+.frete-page {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.frete-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.frete-back {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.frete-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.frete-body {
+  padding: 12px;
+  flex: 1;
+}
+
+.frete-address {
+  color: #6b7280;
+  font-size: 13px;
+  margin: 4px 0 12px;
+}
+
+.frete-cep-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  max-width: 520px;
+}
+
+.frete-cep-label {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.frete-cep-input {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.frete-cep-btn {
+  width: 100%;
+  margin-top: 10px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.frete-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 680px;
+}
+
+.frete-card-head {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.frete-card-title {
+  font-weight: 700;
+}
+
+.frete-card-badge {
+  font-size: 12px;
+  color: #059669;
+  font-weight: 800;
+}
+
+.frete-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.frete-option {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+}
+
+.frete-option:last-child {
+  border-bottom: none;
+}
+
+.frete-option input {
+  margin-top: 3px;
+}
+
+.frete-option-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.frete-option-title {
+  font-weight: 700;
+}
+
+.frete-option-price {
+  font-weight: 700;
+  color: #059669;
+}
+
+.frete-option-sub {
+  margin-top: 3px;
+  display: inline-block;
+  background: #111827;
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.frete-choose-day {
+  margin-top: 4px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: #2563eb;
+  cursor: pointer;
+  text-align: left;
+}
+
+.frete-choose-day-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.frete-date {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.frete-date-selected {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.frete-bottom {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  padding: 12px;
+}
+
+.frete-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.frete-bottom-label {
+  color: #111827;
+  font-weight: 600;
+}
+
+.frete-bottom-value {
+  color: #059669;
+  font-weight: 800;
+}
+
+.frete-continue {
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 12px;
+  cursor: pointer;
+  font-weight: 800;
+}

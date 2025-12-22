@@ -1,0 +1,95 @@
+.admin-settings {
+  padding: 20px;
+}
+
+.admin-settings-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 18px;
+  max-width: 640px;
+}
+
+.admin-settings-card h1 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  color: #333;
+}
+
+.hint {
+  margin: 0 0 16px;
+  color: #666;
+  font-size: 13px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.field label {
+  font-size: 13px;
+  color: #666;
+}
+
+.field input {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 0 12px;
+  outline: none;
+}
+
+.field input:focus {
+  border-color: #3483fa;
+}
+
+.alert {
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.alert.error {
+  background: #fff1f1;
+  border: 1px solid #ffd6d6;
+  color: #a33;
+}
+
+.alert.success {
+  background: #f1fff5;
+  border: 1px solid #ccefd7;
+  color: #1b6b3a;
+}
+
+.btn-save {
+  height: 42px;
+  border: 0;
+  border-radius: 10px;
+  background: #3483fa;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-save:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid #eee;
+  border-top-color: #3483fa;
+  animation: spin 1s linear infinite;
+  margin-bottom: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,365 @@
+.auth-page {
+  min-height: calc(100vh - 130px);
+  background: #f5f5f5;
+  padding: 24px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.auth-card h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+.auth-sub {
+  margin: 8px 0 16px;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 13px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.field input {
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  padding: 0 12px;
+  outline: none;
+}
+
+.field input:focus {
+  border-color: #3483fa;
+}
+
+.hint {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.auth-primary {
+  height: 44px;
+  border-radius: 10px;
+  border: 0;
+  background: #3483fa;
+  color: #fff;
+  font-weight: 800;
+}
+
+.auth-primary:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.auth-footer {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 13px;
+}
+
+.auth-link {
+  color: #3483fa;
+  font-weight: 700;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Wireframe Mercado Livre (Login) */
+.auth-ml {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.auth-ml-header {
+  background: #FFE600;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.auth-ml-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.auth-ml-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.auth-ml-logo img {
+  width: 92px;
+  height: 30px;
+}
+
+.auth-ml-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 20px 24px;
+}
+
+.auth-ml-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.auth-ml-left h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: #111827;
+}
+
+.auth-ml-kicker {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.55);
+  margin-bottom: 10px;
+  letter-spacing: 0.06em;
+}
+
+.auth-ml-card {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.auth-ml-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-ml-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.auth-ml-field label {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.auth-ml-field input {
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 0 12px;
+  outline: none;
+}
+
+.auth-ml-field input:focus {
+  border-color: #3483fa;
+  box-shadow: 0 0 0 2px rgba(52, 131, 250, 0.18);
+}
+
+.auth-ml-primary {
+  height: 46px;
+  border-radius: 8px;
+  border: 0;
+  background: #3483fa;
+  color: #fff;
+  font-weight: 800;
+}
+
+.auth-ml-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-ml-center {
+  text-align: center;
+  margin-top: -2px;
+}
+
+.auth-ml-link {
+  border: 0;
+  background: transparent;
+  color: #3483fa;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.auth-ml-link:hover {
+  text-decoration: underline;
+}
+
+.auth-ml-sep {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.auth-ml-sep span {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.auth-ml-secondary {
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.auth-ml-google {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.06);
+  font-weight: 900;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.auth-ml-account {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  background: #fff;
+}
+
+.auth-ml-account-icon {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.auth-ml-account-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.auth-ml-account-id {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.auth-ml-password {
+  position: relative;
+  display: flex;
+}
+
+.auth-ml-password input {
+  width: 100%;
+  padding-right: 44px;
+}
+
+.auth-ml-eye {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 34px;
+  width: 34px;
+  border-radius: 8px;
+  border: 0;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.55);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.auth-ml-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.auth-ml-bottom {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-ml-problem {
+  width: 100%;
+  max-width: 520px;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px 14px;
+}
+
+@media (max-width: 900px) {
+  .auth-ml-main {
+    padding-top: 18px;
+  }
+
+  .auth-ml-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .auth-ml-left h1 {
+    font-size: 28px;
+  }
+
+  .auth-ml-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
