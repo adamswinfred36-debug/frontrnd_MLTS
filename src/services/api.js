@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://backend-mlst.onrender.com/api';
+const API_URL = 'https://backend-mlst-1.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,
