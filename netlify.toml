@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+# CRA (react-scripts) pode falhar em CI quando há warnings de ESLint.
+# Mantém o deploy estável sem mudar seu build local.
+[build.environment]
+  CI = "false"
+  NODE_VERSION = "18"
