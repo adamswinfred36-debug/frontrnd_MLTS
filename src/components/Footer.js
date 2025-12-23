@@ -78,7 +78,7 @@ const Footer = () => {
               </button>
             </div>
             <div className="ml-footer-copy">
-              © {new Date().getFullYear()} Mercadoria Livre Clone — PIX manual
+              © {new Date().getFullYear()} Mercadoria Livre
             </div>
           </div>
         </div>

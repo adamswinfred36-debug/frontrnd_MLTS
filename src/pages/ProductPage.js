@@ -567,7 +567,7 @@ const ProductPage = () => {
         <div className="store-info">
           <h2>Informações da loja</h2>
           <div className="store-card">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 134 134'%3E%3Cpath fill='%23333' d='M67 0C30 0 0 30 0 67s30 67 67 67 67-30 67-67S104 0 67 0zm32 89c-8 8-19 13-32 13s-24-5-32-13c-8-8-13-19-13-32s5-24 13-32c8-8 19-13 32-13s24 5 32 13c8 8 13 19 13 32s-5 24-13 32z'/%3E%3Cpath fill='%233483FA' d='M67 25c-12 0-23 5-31 13-8 8-13 19-13 31s5 23 13 31c8 8 19 13 31 13s23-5 31-13l-18-18-13 13-9-9 13-13-9-9 13-13 9 9 13-13 18 18c8-8 13-19 13-31s-5-23-13-31c-8-8-19-13-31-13z'/%3E%3C/svg%3E" alt={product.seller.name} />
+            <img src="/pt_logo_large_plus@2x.webp" alt={product.seller.name} />
             <div className="store-details">
               <h3>{product.seller.name}</h3>
               {product.seller.official && <span className="badge-platinum">MercadoLíder Platinum</span>}

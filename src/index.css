@@ -37,3 +37,9 @@ img {
 input, textarea, select {
   font-family: inherit;
 }
+
+@media (max-width: 900px) {
+  input, textarea, select {
+    font-size: 16px;
+  }
+}
