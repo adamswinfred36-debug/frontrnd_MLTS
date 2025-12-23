@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
-import { getProducts, createProduct, updateProduct } from '../../services/api';
+import { getProducts, createProduct, updateProduct, resolveImageUrl } from '../../services/api';
 import { FaArrowLeft, FaImage, FaTimes } from 'react-icons/fa';
 import './AdminProductForm.css';
 
@@ -72,7 +72,7 @@ const AdminProductForm = () => {
           ...product,
           features: product.features.length > 0 ? product.features : ['']
         });
-        setImagePreviews(product.images.map(img => `http://localhost:5000${img}`));
+        setImagePreviews(product.images.map(resolveImageUrl));
       }
     } catch (error) {
       console.error('Erro ao carregar produto:', error);

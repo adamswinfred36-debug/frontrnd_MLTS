@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { getProducts, deleteProduct } from '../../services/api';
+import { getProducts, deleteProduct, resolveImageUrl } from '../../services/api';
 import { FaPlus, FaEdit, FaTrash, FaSearch, FaBox } from 'react-icons/fa';
 import './AdminProducts.css';
 
@@ -110,7 +110,7 @@ const AdminProducts = () => {
                 <tr key={product._id}>
                   <td>
                     <div className="product-image-cell">
-                      <img src={`http://localhost:5000${product.images[0]}`} alt={product.title} />
+                      <img src={resolveImageUrl(product.images[0])} alt={product.title} />
                     </div>
                   </td>
                   <td>

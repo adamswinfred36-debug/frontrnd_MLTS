@@ -6,6 +6,15 @@ const API_URL =
     ? 'https://backend-mlst-1.onrender.com/api'
     : 'http://localhost:5000/api');
 
+export const API_ORIGIN = String(API_URL).replace(/\/api\/?$/, '');
+
+export const resolveImageUrl = (image) => {
+  if (!image || typeof image !== 'string') return '';
+  if (/^https?:\/\//i.test(image)) return image;
+  const path = image.startsWith('/') ? image : `/${image}`;
+  return `${API_ORIGIN}${path}`;
+};
+
 const api = axios.create({
   baseURL: API_URL,
   headers: {

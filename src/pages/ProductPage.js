@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { customerRegister, customerRegisterLogin, getProductBySlug } from '../services/api';
 import { FaStar, FaTruck, FaShieldAlt, FaChevronRight, FaHeart } from 'react-icons/fa';
 import './ProductPage.css';
+import { resolveImageUrl } from '../services/api';
 
 const AuthModal = ({ open, mode, setMode, onSuccess }) => {
   const [loading, setLoading] = useState(false);
@@ -335,7 +336,7 @@ const ProductPage = () => {
               {product.images.map((image, index) => (
                 <img
                   key={index}
-                  src={`http://localhost:5000${image}`}
+                  src={resolveImageUrl(image)}
                   alt={`${product.title} ${index + 1}`}
                   className={selectedImage === index ? 'active' : ''}
                   onClick={() => setSelectedImage(index)}
@@ -344,7 +345,7 @@ const ProductPage = () => {
             </div>
             <div className="gallery-main">
               <img
-                src={`http://localhost:5000${product.images[selectedImage]}`}
+                src={resolveImageUrl(product.images[selectedImage])}
                 alt={product.title}
               />
             </div>
@@ -555,7 +556,7 @@ const ProductPage = () => {
             {product.images.map((image, index) => (
               <img
                 key={index}
-                src={`http://localhost:5000${image}`}
+                src={resolveImageUrl(image)}
                 alt={`${product.title} foto ${index + 1}`}
               />
             ))}

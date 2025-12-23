@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocation, useSearchParams, useNavigate } from 'react-router-dom';
 import QRious from 'qrious';
-import { getProductBySlug, getPublicSettings } from '../services/api';
+import { getProductBySlug, getPublicSettings, resolveImageUrl } from '../services/api';
 import './PixPage.css';
 
 const PixPage = () => {
@@ -377,7 +377,7 @@ const PixPage = () => {
             {product && (
               <div className="summary">
                 <div className="summary-product">
-                  <img src={`http://localhost:5000${product.images?.[0] || ''}`} alt={product.title} />
+                  <img src={resolveImageUrl(product.images?.[0] || '')} alt={product.title} />
                   <div>
                     <p className="summary-title">{product.title}</p>
                     <p className="summary-qty">Quantidade: {quantity}</p>

@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { getProducts } from '../services/api';
+import { getProducts, resolveImageUrl } from '../services/api';
 import {
   FaStar,
   FaGift,
@@ -363,7 +363,7 @@ const Home = () => {
               <Link key={product._id} to={`/produto/${product.slug}`} className="product-card">
                 <div className="product-image">
                   <img
-                    src={`http://localhost:5000${product.images[0]}`}
+                    src={resolveImageUrl(product.images[0])}
                     alt={product.title}
                   />
                   {product.price.discount > 0 && (
