@@ -63,7 +63,7 @@ const Login = () => {
       <header className="auth-ml-header" aria-label="Topo">
         <div className="auth-ml-header-inner">
           <Link to="/" className="auth-ml-logo" aria-label="Página inicial">
-            <img src="/pt_logo_large_plus@2x.webp" alt="Logo Mercado Livre" />
+            <img src="/pt_logo_large_plus@2x.webp" alt="Logo Mercadoria Livre" />
           </Link>
         </div>
       </header>

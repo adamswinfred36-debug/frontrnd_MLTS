@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="ml-footer-col">
               <h4>Sobre</h4>
               <button type="button" className="ml-footer-link" onClick={(e) => e.preventDefault()}>
-                Mercado Livre
+                Mercadoria Livre
               </button>
               <button type="button" className="ml-footer-link" onClick={(e) => e.preventDefault()}>
                 Trabalhe conosco
@@ -78,7 +78,7 @@ const Footer = () => {
               </button>
             </div>
             <div className="ml-footer-copy">
-              © {new Date().getFullYear()} Mercado Livre Clone — PIX manual
+              © {new Date().getFullYear()} Mercadoria Livre Clone — PIX manual
             </div>
           </div>
         </div>

@@ -57,7 +57,7 @@ const Navbar = () => {
           </button>
 
           <Link to="/" className="navbar-logo" aria-label="Página inicial">
-            <img className="navbar-logo" src="/pt_logo_large_plus@2x.webp" alt="Logo Mercado Livre" />
+            <img className="navbar-logo" src="/pt_logo_large_plus@2x.webp" alt="Logo Mercadoria Livre" />
           </Link>
 
           <form className="navbar-search" onSubmit={handleSearch}>

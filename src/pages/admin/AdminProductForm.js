@@ -33,7 +33,7 @@ const AdminProductForm = () => {
       count: 0
     },
     seller: {
-      name: 'Mercado Livre',
+      name: 'Mercadoria Livre',
       official: true,
       sales: 1000000
     },
