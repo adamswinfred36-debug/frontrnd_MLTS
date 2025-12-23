@@ -567,7 +567,7 @@ const ProductPage = () => {
         <div className="store-info">
           <h2>Informações da loja</h2>
           <div className="store-card">
-            <img src="/pt_logo_large_plus@2x.webp" alt={product.seller.name} />
+            <img width="150px" src="/pt_logo_large_plus@2x.webp" alt={product.seller.name} />
             <div className="store-details">
               <h3>Mercadoria</h3>
               {product.seller.official && <span className="badge-platinum">MercadoLíder Platinum</span>}
